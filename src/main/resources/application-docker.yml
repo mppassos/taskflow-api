@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://db:5432/taskflow}
+    username: ${DB_USERNAME:taskflow}
+    password: ${DB_PASSWORD:taskflow}
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+
+logging:
+  level:
+    com.taskflow: INFO
+    org.springframework: WARN
